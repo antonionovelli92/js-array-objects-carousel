@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#carousel {
+    height: 500px;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+
+}
+
+.gallery {
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+#carousel img.active {
+    display: block;
+}
+
+#carousel h3 {
+    text-align: right;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 70%;
+}
+
+.thumbnail-image {
+    width: 20%;
+    position: relative;
+}
+
+
+#carousel .bi {
+    font-size: 2rem;
+    z-index: 1;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+    position: absolute;
+    right: 21%;
+    transform: translateX(20%);
+    transition: 0.8s;
+}
+
+#prev {
+    bottom: 2%;
+}
+
+#carousel .bi:hover {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+.thumbnail-image img {
+    height: 100px;
+    width: 200px;
+    margin-left: 5px;
+    display: block;
+    margin-top: 1px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thumbnail-image img:hover {
+    border: 1px solid black;
+    box-shadow: 0 0 10px red;
+}
