@@ -87,7 +87,7 @@ const next = document.getElementById('next');
 const gallery = document.querySelector('#carousel .gallery');
 
 // Recupero anche la galleria dei thumbnails
-const thumbGallery = document.getElementById('thumbnails');
+const thumbGallery = document.querySelector('#thumbnails');
 
 let galleryElements = '';
 let thumbnailElements = '';
